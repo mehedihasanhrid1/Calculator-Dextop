@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="m-0 flex items-center justify-center bg-cover bg-no-repeat h-screen" style="background-image: url('https://plus.unsplash.com/premium_photo-1671308539073-ebf8985a6a11?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="bg-slate-500 h-[490px] w-[320px] rounded-lg shadow-lg px-6 py-5 flex items-center flex-col gap-6">
+        <div id="display" class="bg-white rounded-xl p-5 w-full h-24 flex items-center justify-end">
+            <p id="result" class="text-3xl">0</p>
+        </div>
+        <div class="flex items-center flex-col">
+            <div class="flex items-center justify-between flex-row gap-5 my-3">
+                <button id="clearAll" class="rounded-full bg-pink-400 h-12 w-12 text-lg font-semibold">AC</button>
+                <button id="clearEntry" class="rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">CE</button>
+                <button id="percentage" class="rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">%</button>
+                <button id="divide" class="rounded-full bg-slate-200 h-12 w-12 text-2xl font-semibold">÷</button>
+            </div>
+            <div class="flex items-center justify-between flex-row gap-5 my-3">
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">7</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">8</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">9</button>
+                <button id="multiply" class="rounded-full bg-slate-200 h-12 w-12 text-2xl font-semibold">×</button>
+            </div>
+            <div class="flex items-center justify-between flex-row gap-5 my-3">
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">4</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">5</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">6</button>
+                <button id="subtract" class="rounded-full bg-slate-200 h-12 w-12 text-2xl font-semibold">-</button>
+            </div>
+            <div class="flex items-center justify-between flex-row gap-5 my-3">
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">1</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">2</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">3</button>
+                <button id="add" class="rounded-full bg-slate-200 h-12 w-12 text-2xl font-semibold">+</button>
+            </div>
+            <div class="flex items-center justify-between flex-row gap-5 my-3">
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">00</button>
+                <button class="number rounded-full bg-slate-200 h-12 w-12 text-lg font-semibold">0</button>
+                <button id="decimal" class="rounded-full bg-slate-200 h-12 w-12 text-3xl font-semibold">·</button>
+                <button id="equals" class="rounded-full bg-orange-400 h-12 w-12 text-2xl font-semibold">=</button>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
